@@ -4,202 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
 <!--nav-->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">My Work</a>
-  <a href="#">Gallery</a>
-  <a href="#">Contact Me</a>
+<div id="mySidenav" class="sidenav sidenavBlue">
+  <a href="javascript:void(0)" class="closebtn" onclick="openOrCloseNav('close')">&times;</a>
+  <ul class="nav-all_items" id="nav-all_items">
+    <li class="nav-item"><a class="active" href="index.html">Home</a></li>
+    <li class="nav-item"><a href="pages/About.html">About</a></li>
+    <li class="nav-item"><a href="pages/Work.html">Work</a></li>
+    <li class="nav-item"><a href="pages/contact.html">Contact</a></li>
+  </ul>
 </div>
-<span class="menu" style="font-size:30px;cursor:pointer; color:#0075CC;" onclick="openNav()">&#9776;</span>
+
+<header id="nav">
+    <a href="index.html"><span class="logo">MA</span></a>
+    <span class="menu" style="color:#0075CC;" onclick="openOrCloseNav('open')">&#9776;</span>
+</header>
 
 <!--Home Background-->
-<div class="Home-background" style="background:url('images/background2.jpg');">
+<div class="Home-background">
     <div class="item center">
-        <h1 class="item-text text-white">Welcome To My Portfolio</h1>
+        <h4 class="item-text text-white subheading">Hi, I'm Maksaud</h4>
+        <h1 class="item-text text-white Heading">Welcome To My Portfolio</h1>
+        <a href="cv/Maksaud-Ahmed-Software-Developer.pdf" target="_blank" class="mybtn btn-4"><span>My CV</span></a> 
     </div>
 </div>
 
 <!--HomeSection1-->
 <section class="HomeSection1 site-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
-            </div>
+        <div class="wrapper">
+            <h1 class="heading text-white">What I Do</h1>
+            <h4><a class="learnMore" href="pages/About.html">Learn More ></a></h4>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
+            <div class="col-md-6">
+                <a class="sampleAbout" href="pages/About.html">
+                    <div class="item1">
+                        <h2>Mobile, Web & App Design</h2>
+                        <img src="images/app.png">
+                        <h5>I build consistently elegant and responsive websites or apps that are production-ready.</h5>
+                    </div>
+                </a>
             </div>
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
-            </div>
-            <div class="col-lg-4 col-md-6 item">
-                <img class="image" src="images/HTML5.png">
-                <h3 class="textTitle">HTML5</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio ut ad omnis fugiat optio expedita doloremque recusandae maxime, debitis consequatur soluta amet ea quae repellat obcaecati. Reiciendis, velit! Vel.</p>
+            <div class="col-md-6">
+                <a class="sampleAbout" href="pages/About.html">
+                    <div class="item2">
+                        <h2>Development & Implementation</h2>
+                        <img src="images/web-programming.png">
+                        <h5>I have knowledge of a large array of programming languages and technologies which makes me flexible!</h5>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 </section>
-
+ 
 <!--HomeSection2-->
 <section class="HomeSection2 site-section">
-    <div class="container-fluid">
+    <div class="container">
+        <h1 class="title">My Ethos</h1>
+        <h4><a class="learnMore" href="pages/About.html">Learn More ></a></h4>
         <div class="row">
-            <div class="col-lg-6 item">
-                <img class="image" src="images/coder.jpg" alt="I Am A Coder">
+            <div class="col-lg-6">
+                <div class="item-text">
+                    <h2 class="title">A Passion For Problem Solving</h2>
+                    <p class="text">
+                        Whenever I encounter a complex problem, I stick with it until 
+                        I find a solution. I take pleasure in comming accross challenges 
+                        and do not shy away from them.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-6 item-text">
-                <h5 class="title">I AM A CODER</h5>
-                <h1 class="title">About Me</h1>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo eius autem expedita repellendus doloribus fugiat debitis nostrum labore voluptas at necessitatibus accusamus, voluptate corporis natus. Laboriosam odio in qui!</p>
-                <button class="btn btn-danger">Read More</button>
+            <div class="col-lg-6 item-image">
+                <img class="image" src="images/AboutImage1.jpg" alt="I Am A Coder">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 item-image">
+                <img class="image" src="images/AboutImage2.jpg" alt="I Am A Coder">
+            </div>
+            <div class="col-lg-6">
+                <div class="item-text">
+                    <h2 class="title">Design Considering The User</h2>
+                    <p class="text">
+                        My apps or websites are built with the upmost care. 
+                        Considering ease of use and following design principles 
+                        I aim to make sure to deliver world class products.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!--HomeSection3-->
-<section class="HomeSection3 site-section">
-    <div class="container">
-        <div class="center"><h1>Some Of My Work(comming soon)</h1></div>
-        <div class="row">
-            <div class="col-md-4 item-wrap">
-                <div class="item">
-                    <h1>hello</h1>
-                </div>
-            </div>
-            <div class="col-md-4 item-wrap">
-                <div class="item">
-                    <h1>hello</h1>
-                </div>
-            </div>
-            <div class="col-md-4 item-wrap">
-                <div class="item">
-                    <h1>hello</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--HomeSection4-->
-<section class="HomeSection4 ExtraSkills site-section" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Gold.jpg');">
+<section class="HomeSection3 ExtraSkills site-section" style="background-color: #74004d;">
     <div class="row">
-        <h1 class="center text-white">Additional Skills</h1>
-    <hr>
+        <h1 class="center title text-white">Some Of My Work</h1>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4">
-                <div class="item-wrap">
-                    <div class="item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, commodi! Accusamus, commodi officia voluptates quasi ullam, facilis ad hic nam explicabo similique nobis, quod voluptate magnam minus vitae ut est.</p>
+            <div class="col-lg-4">
+                <a class="sampleAbout" href="pages/Work.html">
+                    <div class="item-wrap" id="item-wrap">
+                        <h3 class="center" id="changeUnderline">Restaurant</h3>
+                        <div class="item-image">
+                            <img src="images/RestaurantPic.png" alt="restaurant design">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md-4">
-                <div class="item-wrap">
-                    <div class="item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, commodi! Accusamus, commodi officia voluptates quasi ullam, facilis ad hic nam explicabo similique nobis, quod voluptate magnam minus vitae ut est.</p>
+            <div class="col-lg-4">
+                <a class="sampleAbout" href="pages/Work.html">
+                    <div class="item-wrap" id="item-wrap">
+                        <h3 class="center" id="changeUnderline">MOT Website</h3>
+                        <div class="item-image">
+                            <img src="images/carDesign.png" alt="Mot Website">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md-4">
-                <div class="item-wrap">
-                    <div class="item">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, commodi! Accusamus, commodi officia voluptates quasi ullam, facilis ad hic nam explicabo similique nobis, quod voluptate magnam minus vitae ut est.</p>
+            <div class="col-lg-4">
+                <a class="sampleAbout" href="pages/Work.html">
+                    <div class="item-wrap" id="item-wrap">
+                        <h3 class="center" id="changeUnderline">Car Rental</h3>
+                        <div class="item-image">
+                            <img src="images/secondCar.JPG" alt="Car Website">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="item-wrap">
-                    <div class="item">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur doloremque eum voluptatem ea, facere nostrum neque atque! Libero, provident. Omnis, alias unde ipsa et facere error deleniti vel dolor.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="item-wrap">
-                    <div class="item">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur doloremque eum voluptatem ea, facere nostrum neque atque! Libero, provident. Omnis, alias unde ipsa et facere error deleniti vel dolor.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <h1 class="rows">
+        <h4 class="center title text-white"><a class="learnMore" href="pages/Work.html">Learn More ></a></h4>
     </div>
 </section>
 
-<!--HomeSection5-->
-<section class="HomeSection5 site-section">
-    <div class="container">
-        <h1 class="center site-section">Some Of My Skill</h1>
-        <div class="row">
-            <div class="col-md-4 col-12 item">
-                <div class="item-inner big-item"><h3>Hello</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias architecto illum voluptatum, officia placeat consectetur. Modi, necessitatibus explicabo! Optio cum est nihil illo repellendus officia animi magni natus illum?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum tempore voluptate pariatur vero quasi maiores deserunt id earum perspiciatis, exercitationem labore. Doloribus, quasi dolore voluptatibus magni in iure sapiente atque.</p>
-                    <button class="btn btn-danger">Contact Me</button>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="item-inner small-item"><h3>Hello</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias architecto illum voluptatum, officia placeat consectetur. Modi, necessitatibus explicabo! Optio cum est nihil illo repellendus officia animi magni natus illum?</p>
-                </div>
-                <div class="item-inner small-item"><h3>Hello</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias architecto illum voluptatum, officia placeat consectetur. Modi, necessitatibus explicabo! Optio cum est nihil illo repellendus officia animi magni natus illum?</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="item-inner small-item"><h3>Hello</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias architecto illum voluptatum, officia placeat consectetur. Modi, necessitatibus explicabo! Optio cum est nihil illo repellendus officia animi magni natus illum?</p>
-                </div>
-                <div class="item-inner small-item"><h3>Hello</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias architecto illum voluptatum, officia placeat consectetur. Modi, necessitatibus explicabo! Optio cum est nihil illo repellendus officia animi magni natus illum?</p>
-                </div>
-            </div>
-        </div>
+<footer>
+    <div class="container text-white">
+        <h4 class="title">Have An Interesting Projcet?<a class="learnMore" href="pages/contact.html"> Lets Talk ></a></h4>
     </div>
-</section>
-
-
-<footer class="site-section">
-    <div class="container">fdsaf</div>
 </footer>
 
-<script src="script.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
-</html> 
+</html>

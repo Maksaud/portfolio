@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<!--nav-->
+<div id="mySidenav" class="sidenav sidenavPurp">
+<a href="javascript:void(0)" class="closebtn" onclick="openOrCloseNav('close')">&times;</a>
+<ul class="nav-all_items" id="nav-all_items">
+    <li class="nav-item"><a href="../index.html">Home</a></li>
+    <li class="nav-item"><a class="active" href="About.html">About</a></li>
+    <li class="nav-item"><a href="Work.html">Work</a></li>
+    <li class="nav-item"><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<header id="nav">
+    <a href="../index.html"><span class="logo">MA</span></a>
+    <span class="menu" style="color:#be298d;" onclick="openOrCloseNav('open')">&#9776;</span>
+</header>
+
+<div class="AboutBackground site-section titleSection">
+    <div class="container-fluid">
+        <div class="col-lg-7 text-white">
+            <h1 class="title">Lets Talk!</h1>
+            <h4 class="subtitle">Get in touch by emailing me or giving me a call!</h4>
+        </div>
+    </div>
+</div>
+
+<div class="contact site-section text-white">
+    <div class="row">
+        <div class="col-lg-6">
+            <form id="contactForm" action="https://formspree.io/maksaud@hotmail.com" method="POST">
+                <label for="name">Name:</label><br>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label for="email">Email Address:</label><br>
+                <input class="form-input" type="email" id="email" name="email" placeholder="Enter your Email address"><br>
+                <label for="subject">Subject:</label><br>
+                <input class="form-input" type="text" id="subject" name="submit" placeholder="Enter your subject"><br>
+                <label for="Message">Message:</label><br>
+                <textarea class="form-input" type="textarea" id="name" name="message" placeholder="Enter your message"></textarea><br>
+                <input type="submit" class="form-submit">
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <div class="contactLinks">
+                <div class="contact-text">
+                    <i></i><p class="text">Phone: <a href="#" class="learnMore">+44752 57 77 602</a></p>
+                </div>
+                <div class="contact-text">
+                    <i></i><p class="text">Email: <a href="#" class="learnMore">maksaud@hotmail.com</a></p>
+                </div>
+                <div class="contact-text">
+                    <i></i><p class="text">GitHub: <a href="#" class="learnMore">GitHub</a></p>
+                </div>
+                <div class="contact-text">
+                    <i></i><p class="text">LinkedIn: <a href="#" class="learnMore">LinkedIn</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../scripts/script.js"></script>
+</body>
+</html>
