@@ -441,6 +441,13 @@ margin-left: 50px;
     width: 100%;
 }
 
+.devOpsImage{
+    text-align: center;
+}
+.devOpsImage img{
+    width: 250px;
+}
+
 /*work section 3*/
 .workSection3, .AboutSection2{
     background-color: #222;
