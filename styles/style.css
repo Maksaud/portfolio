@@ -573,6 +573,38 @@ textarea{
     min-height: 434px;
 }
 
+
+/*devops*/
+.DevOpsBackground{
+    width:100%;
+    height: 100vh;
+    background: url('https://media.giphy.com/media/xTiTnI1mdyxsFKTFjW/giphy.gif');
+    background-attachment:fixed;
+}
+
+.DevOpsBackground .item{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #014579c0;
+    margin: auto;
+    max-width: 1000px;
+    width: 75%;
+    padding: 40px;
+}
+
+.DevOpsBackground a{
+    display: inline-block !important;
+}
+
+.DevOpsSection{
+    background-color: #222;
+    padding: 0;
+}
+
+.DevOpsSection h1{
+    padding:50px 0 50px 0;
+}
 /*footer*/
 footer{
     background-color:#222!important;
