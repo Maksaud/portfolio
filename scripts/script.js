@@ -32,3 +32,34 @@ window.onscroll = () =>{
   }
 }
 
+$("#projectButton").click(function(){
+  $("#Projects").show();
+  $("#tools").hide();
+  $("#concepts").hide();
+  $("#workflow").hide();
+});
+
+$("#toolsButton").click(function(){
+  $("#tools").show();
+  $("#Projects").hide();
+  $("#concepts").hide();
+  $("#workflow").hide();
+});
+
+$("#conceptButton").click(function(){
+  $("#concepts").show();
+  $("#Projects").hide();
+  $("#tools").hide();
+  $("#workflow").hide();
+});
+
+$("#workflowButton").click(function(){
+  $("#workflow").show();
+  $("#Projects").hide();
+  $("#concepts").hide();
+  $("#tools").hide();
+});
+
+// $("#show").click(function(){
+//   $("p").show();
+// });
