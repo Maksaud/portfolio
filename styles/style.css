@@ -1,3 +1,11 @@
+/*
+colours
+#FFCB5B=#5C95FF
+#222=#586E5E
+#014579=#C47600
+#74004d=#16BF00
+*/
+
 body, html {
     margin:0;
     padding:0;
@@ -157,6 +165,7 @@ padding-top: 60px;
 
 #nav-all_items{
   display: none;
+  list-style: none;
 }
 .sidenav a {
 padding: 8px 8px 8px 32px;
@@ -575,6 +584,10 @@ textarea{
 
 
 /*devops*/
+.devopsNav{
+    background-color: #1c3038;
+}
+
 .DevOpsBackground{
     width:100%;
     height: 100vh;
@@ -582,11 +595,60 @@ textarea{
     background-attachment:fixed;
 }
 
+.devOpsmybtn {
+    display: block;
+    color:#695785;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 45px;
+    margin: 30px auto;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+.devOpsmybtn:hover {
+    text-decoration: none;
+    color: #f26c6e;
+  }
+
+  .devOpsbtn-4 {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  .devOpsbtn-4 span {
+    z-index: 20;
+  }
+  .devOpsbtn-4:after {
+    background: black;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .devOpsbtn-4:hover:after {
+    left: 120%;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
 .DevOpsBackground .item{
+    font-weight: 1000;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #014579c0;
+    background-color: #36b5ac;
     margin: auto;
     max-width: 1000px;
     width: 75%;
@@ -598,18 +660,72 @@ textarea{
 }
 
 .DevOpsSection{
-    background-color: #222;
+    background:#719f67;
     padding: 0;
 }
 
 .DevOpsSection h1{
     padding:50px 0 50px 0;
 }
+
+.sidenavYellow a:hover,
+.sidenavYellow .active{
+color: #36b5ac!important;
+text-decoration: none;
+}
+
+.sidenavYellow{
+    background-color: #1c3038;
+}
+.devOpswork1{
+    background: linear-gradient(#6293c9, #141e29);
+}
+
+.devOpswork2{
+    background: linear-gradient(#1c3038,#080f11);
+}
+.devOpswork3{
+    background: linear-gradient(#8a71af, #292235);
+}
+
+.DevOpsTools{
+    background-color: #1c3038;
+}
+
+.devOps1{
+    background-color:#f26c6e!important;
+}
+
+.devOps2{
+    background-color:#36b5ac!important;
+}
+
+.devOpsConcept{
+    background-color:#36b5ac;
+    color:black!important;
+}
+
+.devOpsConcept h2{
+    border-bottom: 2px #8a71af solid !important;
+}
+
+.devOpsWorkflow{
+    background-color:#8a71af;
+}
+
+.devOpsLink{
+    color:#f26c6e;
+}
+
 /*footer*/
 footer{
     background-color:#222!important;
     text-align: center;
     padding:20px 0;
+}
+
+.devopsFooter{
+    background-color: #1c3038!important;
 }
 
   /*media queries*/
